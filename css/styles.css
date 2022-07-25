@@ -152,11 +152,12 @@ button {
   padding: 200px 0;
   background-color: var(--background-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/Img10.png);
+    url(../images/Img10.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
+  max-height: 600px;
   margin: 0 auto;
 }
 .business-title {
@@ -330,10 +331,12 @@ button {
 .socials-icon {
   fill: currentColor;
 }
+.socials-link:focus,
 .socials-link:hover {
   background-color: var(--color-logo);
 }
-.socials-link:hover .socials-icon {
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
   fill: var(--color-title-second);
 }
 .cmd-item {
@@ -345,9 +348,7 @@ button {
 .klient {
   background-color: var(--color-title-second);
 }
-.klient-fix {
-  margin-bottom: 50px;
-}
+
 .fix-klient {
   color: var(--color-text);
   font-weight: 700;
@@ -355,7 +356,9 @@ button {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
+
 .socials-klient {
   display: flex;
   align-items: center;
